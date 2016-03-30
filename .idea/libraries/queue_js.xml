@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="queue-js" type="javaScript">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/com/kon/js/vendor/queue.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

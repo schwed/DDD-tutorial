@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/orientdb-api.js"></script>
+    <title></title>
+
+    <script>
+        function connect() {
+            var orientdb = new ODatabase("http://USMDCKDDB6042:2480/StanDB");
+            var orientdbinfo = orientdb.open('root', 'Genie.2013');
+            alert('connected');
+
+            var result = orientdb.query('select from OUser');
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="Connect to OrientDB" onclick="connect()"/>
+</body>
+</html>

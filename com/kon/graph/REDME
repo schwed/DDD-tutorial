@@ -1,0 +1,173 @@
+D3.js: How to handle dynamic JSON Data
+
+D3 library uses SVG
+
+-It uses SVG which many of us have no experience with.
+-SVG has an opposite y-coordinate system (0 is on top, height() is at the bottom).
+-stroke, fill, clipping, etc.
+
+
+The example creates a dynamic graph that I=one could add, edit and remove data and have d3 update the graph in real time.
+
+Example of JSON response to represent into graph
+JSONData = [
+  { "id": 3, "created_at": "Sun May 05 2013", "amount": 12000},
+  { "id": 1, "created_at": "Mon May 13 2013", "amount": 2000},
+  { "id": 2, "created_at": "Thu Jun 06 2013", "amount": 17000},
+  { "id": 4, "created_at": "Thu May 09 2013", "amount": 15000},
+  { "id": 5, "created_at": "Mon Jul 01 2013", "amount": 16000}
+]
+
+
+The point of this example is to visualize and understand how enter() and exit() works with arbitrary data.
+
+--------------------------------------------------------------------------------------------------------
+                                                Scales
+--------------------------------------------------------------------------------------------------------
+Scales are objects. d3.time.scale() and d3.scale.linear() are two class constructors.
+The subsequent methods are getter/setter merged in the same method.
+If you specify an argument, it sets the value. If you don't, it returns the current value.
+
+  var format = d3.time.format("%a %b %d %Y")
+  var amountFn = function(d) { return d.amount }
+  var dateFn = function(d) { return format.parse(d.created_at) }
+
+  var x = d3.time.scale()
+    .range([10, 280])
+    .domain(d3.extent(data, dateFn))
+
+  var y = d3.scale.linear()
+    .range([180, 10])
+    .domain(d3.extent(data, amountFn))
+
+
+```````````````````````
+Range
+
+Range is the amount of pixels you wish to cover with the scale.
+When you start, you might want to cover the whole width and height of your SVG canvas.
+If you do so, you will eventually see that elements will be drawn on the edge and become clipped.
+Giving padding to your range makes sense since every piece of calculation and rendering will be done using your scales
+so you set your padding in one place and everything you do in you graph will be inside it.
+In the case of our graph here, I used a 10px padding on each side of the graph.
+You may also notice that the scale in the y-axis is inverted.
+This is because SVG's y-coordinate is inverted. 0 is at the top of the graph while the height is at the bottom.
+
+``````````````````````````
+Domain
+
+Domain is the start and end of your dataset.
+It can be any kind of value that can be compared in javascript.
+Here, one domain is a range of numbers while the other is a range of dates.
+While the range is usually fixed and doesn't change during the lifetime of the graph,
+the domain may have to change if your dataset changes.
+Notice that I use d3.extent() as an argument to the domain. This is basically an alias of the following
+ x.domain( [ d3.min(data, dateFn), d3.max(data, dateFn) ] )
+
+
+-----------------------------------------------------------------------------------------------------------------------
+                                    Enter()
+-----------------------------------------------------------------------------------------------------------------------
+
+If you read the documentation about enter or exit, you know that data is bound to nodes.
+
+How are they bound? It depends on data().
+
+ svg.selectAll("circle")
+ .data(JSONData, function(d) {
+   return d.created_at
+ })
+
+ If you only set the values for data (like data([1,2,3,4])), d3.js will bind the first value in the array to the first node element
+ (in this case, a circle)
+If you set a key function, it will bind the value to the node matching having the same key.
+It's worth mentioning that if you already have data with the same key, d3.js will store the data in the node
+but will still use the original data.
+Don't worry too much about the data for now, I'll cover it further down the post.
+Once your data is bound to your selection (svg.selectAll("circle").data(JSONData)), enter() will return all the values
+for which no node circle could be found.
+After that, it's your job to append a new element ("svg:circle") and set the proper attribute to that object.
+If you have ever read a d3.js tutorial, those lines should mean something to you.
+
+
+------------------------------------------------------------------------------------------------------------------------
+                                    Add new entries
+------------------------------------------------------------------------------------------------------------------------
+
+The goal of this post is to add and remove arbitrary data from the graph, and while editing/removing data will need a bit of work,
+ adding new entry is pretty straight forward.
+ The current code already support dynamic data addition.
+The enter() method will need to be refactored to avoid code duplication where it's possible.
+For the sake of this experiment, I'll build a button that will randomly add javascript object to JSONData.
+
+use random.html example
+
+`````````````````````````````````
+Outside the current (domain)
+
+When adding data, it might falls outside the current graph.
+What you need to do is to reset the scale to include the new minimum and maximum from your dataset.
+This is exactly what I was talking about earlier when I was explaining how scales works.
+Because some values are smaller or greater than the limit we set at the beginning, the x and y value that are generated
+ with the original scale are too small/big to be rendered on the canvas.
+The scale need to be set to reflect the current data.
+To achieve this, refreshGraph() needs to be refactored to include two changes. It needs to
+1.update the domains with the new dataset;
+2.update existing circles (a.k.a nodes) with the new scales;
+
+use inside.html example
+
+-----------------------------------------------------------------------------------------------------------------------
+                                Modify the scales
+-----------------------------------------------------------------------------------------------------------------------
+First, I don't recreate the scales from scratch.
+The range value are still good and I don't want to reconfigure every settings I set just because the domain changes.
+The domain is the only thing that needs to change.
+
+`````````````````````````````````````
+Transition?
+
+Two other things are different than the previous version: I now assign a circles variable and I use transition() for the first time
+I assign the result of data() to a variable because enter() only affects new data that are not bound to nodes.
+When I started playing with d3.js, I thought that rendered data would be evented and react to my changing of scales,
+domains and whatnot. It's not. You have to tell d3.js to update the current stuff or it will stay there, unsynced.
+So, the first cy, cx assignations are for nodes that are already rendered. transition() is added there to add a nice animation
+between the two position for each node.
+If you don't want animation, remove transition() and the graph will update itself without animation.
+
+
+------------------------------------------------------------------------------------------------------------------------
+                            Remove Data
+------------------------------------------------------------------------------------------------------------------------
+
+Removing data is more tricky.
+Because the current data() does not have a key function, removing data from anywhere in the array
+will cause nodes & data to fall out of sync.
+The solution is to add the key function that was explained at the beginning of this post.
+Here's how we can fix this out of sync issue:
+svg.selectAll("circle").data(JSONData, dateFn) // I want the key to be a date object
+And here's all the code that generates the following graph.
+
+
+As the previous example, transition, enter and exit are separated since those three methods are not chainable.
+It also think it gives a boost on readability.
+The real differences here is where I assign the data and the exit.
+
+Now that we have set a key, there's another behavior that has happened: No duplicates!
+You can test this behavior by going to the previous graph and add a lot of data,
+you will soon see more than 1 data for a given date.
+Add a lot of data here, after a while, the graph won't add any nodes.
+That's the key function in action!
+
+
+
+
+
+
+
+
+
+
+
+
+

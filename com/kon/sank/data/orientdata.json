@@ -1,0 +1,583 @@
+{
+  "links": [
+    {"source": "#27:42", "target": "#26:10", "value": "1"},
+    {"source": "#14:64", "target": "#27:42", "value": "1"},
+    {"source": "#27:43", "target": "#26:10", "value": "1"},
+    {"source": "#27:44", "target": "#26:10", "value": "1"},
+    {"source": "#27:45", "target": "#26:10", "value": "1"},
+    {"source": "#27:46", "target": "#26:10", "value": "1"},
+    {"source": "#27:47", "target": "#26:10", "value": "1"},
+    {"source": "#27:48", "target": "#26:10", "value": "1"},
+    {"source": "#27:49", "target": "#26:10", "value": "1"},
+    {"source": "#27:50", "target": "#26:10", "value": "1"},
+    {"source": "#27:51", "target": "#26:10", "value": "1"},
+    {"source": "#27:52", "target": "#26:10", "value": "1"},
+    {"source": "#27:53", "target": "#26:10", "value": "1"},
+    {"source": "#27:54", "target": "#26:10", "value": "1"},
+    {"source": "#27:55", "target": "#26:10", "value": "1"},
+    {"source": "#27:56", "target": "#26:10", "value": "1"},
+    {"source": "#27:57", "target": "#26:10", "value": "1"},
+    {"source": "#27:58", "target": "#26:10", "value": "1"},
+    {"source": "#27:59", "target": "#26:10", "value": "1"},
+    {"source": "#27:60", "target": "#26:10", "value": "1"},
+    {"source": "#27:61", "target": "#26:10", "value": "1"},
+    {"source": "#27:62", "target": "#26:10", "value": "1"},
+    {"source": "#27:63", "target": "#26:10", "value": "1"},
+    {"source": "#27:64", "target": "#26:10", "value": "1"},
+    {"source": "#27:65", "target": "#26:10", "value": "1"},
+    {"source": "#27:66", "target": "#26:10", "value": "1"},
+    {"source": "#27:67", "target": "#26:10", "value": "1"},
+    {"source": "#27:68", "target": "#26:10", "value": "1"},
+    {"source": "#27:69", "target": "#26:10", "value": "1"},
+    {"source": "#14:65", "target": "#27:43", "value": "1"},
+    {"source": "#14:66", "target": "#27:44", "value": "1"},
+    {"source": "#14:67", "target": "#27:45", "value": "1"},
+    {"source": "#14:68", "target": "#27:46", "value": "1"},
+    {"source": "#14:69", "target": "#27:47", "value": "1"},
+    {"source": "#14:70", "target": "#27:48", "value": "1"},
+    {"source": "#14:71", "target": "#27:49", "value": "1"},
+    {"source": "#14:72", "target": "#27:50", "value": "1"},
+    {"source": "#14:73", "target": "#27:51", "value": "1"},
+    {"source": "#14:74", "target": "#27:52", "value": "1"},
+    {"source": "#14:75", "target": "#27:53", "value": "1"},
+    {"source": "#14:76", "target": "#27:54", "value": "1"},
+    {"source": "#14:77", "target": "#27:55", "value": "1"},
+    {"source": "#14:78", "target": "#27:56", "value": "1"},
+    {"source": "#14:79", "target": "#27:57", "value": "1"},
+    {"source": "#14:80", "target": "#27:58", "value": "1"},
+    {"source": "#14:81", "target": "#27:59", "value": "1"},
+    {"source": "#14:82", "target": "#27:60", "value": "1"},
+    {"source": "#14:83", "target": "#27:61", "value": "1"},
+    {"source": "#14:84", "target": "#27:62", "value": "1"},
+    {"source": "#14:85", "target": "#27:63", "value": "1"},
+    {"source": "#14:86", "target": "#27:64", "value": "1"},
+    {"source": "#14:87", "target": "#27:65", "value": "1"},
+    {
+      "source": "#14:88",
+      "target": "#27:66",
+      "value": "1"
+    },
+    {
+      "source": "#14:89",
+      "target": "#27:67",
+      "value": "1"
+    },
+    {
+      "source": "#14:90",
+      "target": "#27:68",
+      "value": "1"
+    },
+    {
+      "source": "#14:91",
+      "target": "#27:51",
+      "value": "1"
+    },
+    {
+      "source": "#14:92",
+      "target": "#27:69",
+      "value": "1"
+    },
+    {
+      "source": "#17:4138",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4139",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4140",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4141",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6853",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4142",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4143",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4144",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6856",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4145",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6858",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4146",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6859",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4147",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4148",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4149",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4150",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6860",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4151",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4160",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4152",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4181",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4153",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4154",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6862",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4155",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4156",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6863",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4157",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4158",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:6865",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4159",
+      "target": "#14:64",
+      "value": "1"
+    },
+    {
+      "source": "#17:4160",
+      "target": "#14:65",
+      "value": "1"
+    },
+    {
+      "source": "#17:4152",
+      "target": "#14:65",
+      "value": "1"
+    },
+    {
+      "source": "#17:4181",
+      "target": "#14:65",
+      "value": "1"
+    },
+    {
+      "source": "#17:4161",
+      "target": "#14:65",
+      "value": "1"
+    },
+    {
+      "source": "#17:4162",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:4163",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:6977",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:4917",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:4164",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:4165",
+      "target": "#14:66",
+      "value": "1"
+    },
+    {
+      "source": "#17:4166",
+      "target": "#14:66",
+      "value": "1"
+    }
+  ],
+  "nodes": [
+    {"name": "StandardizedRWA.Standardized Approach Credit Risk_Credit RWA_securities (excluding securitizations)_Available-for-sale"},
+    {"name": "FRY14Q_CRE_YYYYMMDD_1073757_MM_DD_YYYY.txt"},
+    {"name": "FRY14_ADDRESSMATCH_1073757_YYYYMM_XX.TXT"},
+    {"name": "FRY14_FIRSTLIEN_LOANLEVEL_1073757_YYYYMM_XX.TXT"},
+    {
+      "name": "FRY14_FIRSTLIEN_PORTFOLIOLEVEL_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FRY14_HOMEEQUITY_LOANLEVEL_1073757_YYYYMM_01.TXT"
+    },
+    {
+      "name": "FRY14_HOMEEQUITY_PORTFOLIOLEVEL_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FR Y-14M_Card_portfolio_submitted_DDMM.xlsx"
+    },
+    {
+      "name": "International_Quarterly_YYYYQQ.csv"
+    },
+    {
+      "name": "LT_VARIABLES_YYYYQQ.xls"
+    },
+    {
+      "name": "MKT_QUARTERLY_VARIABLES_YYYYMM.csv"
+    },
+    {
+      "name": "PROD_HPI.zip"
+    },
+    {
+      "name": "RATES_MONTHLY_YYYYMMDD.csv"
+    },
+    {
+      "name": "STATE_UR_YYYYMM_scenarioname.csv"
+    },
+    {
+      "name": "US_QUARTERLY_YYYYQQ.csv"
+    },
+    {
+      "name": "XQYY Credit Spreads_CREST Upload.xls"
+    },
+    {
+      "name": "fry14_usbc_loanlevel_YYYYMM.txt"
+    },
+    {
+      "name": "FR_Y-14A_Summary_template - BAC Baseline MM-DD-YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_template - BAC Severly Adverse MM-DD-YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_template - BAC Sup Adverse MM-DD-YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_template - BAC Sup Baseline MM-DD-YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_template - BAC Sup Severly Adverse MM-DD-YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_Template_11202014 BACBL MMDDYY_TIME.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_Template_11202014 BACSA MMDDYY_TIME.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_Template_11202014 SUPA MMDDYY_TIME.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_Template_11202014 SUPBL MMDDYY_TIME.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Summary_Template_11202014 SUPSA MMDDYY_TIME.xlsx"
+    },
+    {
+      "name": "FR_Y_14Q_Securities_1073757_BAC_YYYYQQ_Aggr_YYYYMMDD.csv"
+    },
+    {
+      "name": "FR_Y_14Q_Securities_1073757_BAC_YYYYQQ_Hedging_YYYYMMDD.csv"
+    },
+    {
+      "name": "FR_Y_14Q_Securities_1073757_BAC_YYYYQQ_Main_YYYYMMDD.csv"
+    },
+    {
+      "name": "INTERCARD_YYYYMMDD_1073757_DD_MM_YYYY.txt"
+    },
+    {
+      "name": "FR_Y-14Q_OpRiskLoss_1073757_BAC_YYYYQQ_BusinessLines_YYYYMMDD.csv"
+    },
+    {
+      "name": "FR_Y-14Q_OpRiskLoss_1073757_BAC_YYYYQQ_MainSchedule_YYYYMMDD.csv"
+    },
+    {
+      "name": "FR_Y-14Q_OpRiskLoss_1073757_BAC_YYYYQQ_Thresholds_YYYYMMDD.csv"
+    },
+    {
+      "name": "FR_Y-14Q_OpRiskLoss_1073757_BAC_YYYYQQ_ReserveFrequency_YYYYMMDD.csv"
+    },
+    {
+      "name": "14Q_Regulatory_Capital_Instruments_template_QQYY_MM.DD.YY.xlsx"
+    },
+    {
+      "name": "FR_Y-14Q_PPNR_template_QQYY_MM-DD-YY.xlsx"
+    },
+    {
+      "name": "1-Balances loan and leases_QQMM_Schedule M1, M2, M3_DraftX.xlsx"
+    },
+    {
+      "name": "1-Supplemental Schedule_QQYY.xlsx"
+    },
+    {
+      "name": "FRY14Q_Trading_FVO_PE_1073757_BAC_DD_MM_YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y_14Q CORPORATELOANDATASCHEDULE_1073757_BAC_MMDDYYYY_XXVXX.txt"
+    },
+    {
+      "name": "FRY14Q_Retail_OTHER_US_CONSUMER_YYYYMMDD_1073757_MM_DD_YYYY.txt"
+    },
+    {
+      "name": "FR_Y-14Q_Trading_template Private Equity MBIA Warrant QQYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14Q_Trading_template Private Equity QQYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14Q_Trading_template Private Equity Visa Swap Liab QQYY.xlsx"
+    },
+    {
+      "name": "usothcons_spec_YYYYMMDD_3242838_MM_DD_YYYY.txt"
+    },
+    {
+      "name": "MSR_TABLES_all_vX.xlsx"
+    },
+    {
+      "name": "USOTHCONS_YYYYMMDD_324838_MM_DD_YYYY.txt"
+    },
+    {
+      "name": "FRY14Q_Retail_Student_YYYYMMDD_1073757_MM_DD_YYYY.txt"
+    },
+    {
+      "name": "USSB_YYYYMMDD_1073757_DD_MM_YYYY.txt"
+    },
+    {
+      "name": "fry14_uscc_loanlevel_YYYYMM.txt"
+    },
+    {
+      "name": "auto_YYYYMMDD_3242838_DD_MM_YYYY.txt"
+    },
+    {
+      "name": "FRY14Q_CVA_TRADING_1073757_BAV_DD_MM_YYYY.xlsx"
+    },
+    {
+      "name": "FR_Y-14Q_Counterparty_1073757_BAC.xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Regulatory_Capital_Transitions_template_MMDDYY_TIME"
+    },
+    {
+      "name": "RCT_SUBMISSION_TEMPLATE_QQYY vX MMDDYYYY.xlsx"
+    },
+    {
+      "name": "StandardizedRWA.Standardized Approach Credit Risk_Credit RWA_securities (excluding securitizations)_Held-to-Maturity"
+    },
+    {
+      "name": "StandardizedRWA.Standardized Approach Credit Risk_Credit RWA_securities (excluding securitizations)_Available-for-sale"
+    },
+    {
+      "name": "CRE_VERSIONXXX"
+    },
+    {
+      "name": "FRY14_ADDRESSMATCH_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FRY14_FIRSTLIEN_LOANLEVEL_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FRY14_FIRSTLIEN_PORTFOLIOLEVEL_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FRY14_HOMEEQUITY_LOANLEVEL_1073757_YYYYMM_01.TXT"
+    },
+    {
+      "name": "FRY14_HOMEEQUITY_PORTFOLIOLEVEL_1073757_YYYYMM_XX.TXT"
+    },
+    {
+      "name": "FR Y-14M_Card_portfolio_submitted_DDMM.xlsx"
+    },
+    {
+      "name": "Data.xlsx"
+    },
+    {
+      "name": "fry14_usbc_loanlevel_YYYYMM.txt"
+    },
+    {
+      "name": "FRY14A_SMRY_YYYYMMDD(quarter end info)_1073757_MM_DD_YYYY.xml"
+    },
+    {
+      "name": "SCRTS_VersionXX.xsd"
+    },
+    {
+      "name": "RETAIL_INTCARD_VersionXX.xsd"
+    },
+    {
+      "name": "OPRISK_VersionXX.xsd"
+    },
+    {
+      "name": "RCI_VersionX.xsd"
+    },
+    {
+      "name": "PPNR_VersionX.xsd"
+    },
+    {
+      "name": "CCAR_BLNCS_VersionX.xsd"
+    },
+    {
+      "name": "CCAR_SUPP_VersionX.xsd"
+    },
+    {
+      "name": "CCAR_FVOHFS_VersionX.xsd"
+    },
+    {
+      "name": "CIL_VersionXXX.xsd"
+    },
+    {
+      "name": "RETAIL_USOTHCONS_VersionXX.xsd"
+    },
+    {
+      "name": "FR_Y-14QTrading_Template.xlsx"
+    },
+    {
+      "name": "FR_Y-14Q_MSR_template.xlsx"
+    },
+    {
+      "name": "RETAIL_STUDENT_VersionXX.xsd"
+    },
+    {
+      "name": "RETAIL_USSB_VersionXX.xsd"
+    },
+    {
+      "name": "fry14_uscc_loanlevel_YYYYMM.txt"
+    },
+    {
+      "name": "RETAIL_AUTO_VersionXX.xsd"
+    },
+    {
+      "name": "FR_Y-14Q_Counterparty_Template (X).xlsx"
+    },
+    {
+      "name": "FR_Y-14A_Regulatory_Capital_Transitions_template.xlsx"
+    },
+    {
+      "name": "RCT_VersionX.xsd"
+    },
+    {
+      "name": "Amortization"
+    },
+    {
+      "name": "CommittedBalance"
+    },
+    {
+      "name": "CrossCollateralizedLoans"
+    },
+    {
+      "name": "CumulativeChargeoffs"
+    },
+    {
+      "name": "CurrentNetOperatingInc"
+
+    },
+    {
+      "name": "CurrentValue"
+    },
+    {
+      "name": "FairValueAdjustmentCommitment"
+    },
+    {
+      "name": "FairValueAdjustmentDrawn"
+    },
+    {
+      "name": "InterestRate"
+    },
+    {"name": "InterestRateVariability"},
+    {"name": "InternalRating"},
+    {"name": "LienPosition"},
+    {"name": "LineOfBusiness"}
+  ]
+}

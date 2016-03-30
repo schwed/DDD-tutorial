@@ -1,0 +1,65 @@
+<div class="row-fluid">
+    <div class="object-head">
+        <strong title="<%= parent_object_nm %> [<%=parent_object_id%>]"><%= parent_object_nm %></strong> > <strong title="<%=object_nm%> [<%=object_id%>], <%=object_type_nm%> [<%=object_type_cd%>]"><%= object_nm %></strong> 
+            <div class="pull-right">
+                <a class="btn btn-warning save">Save</a>
+                <a class="btn cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <table class="table table-condensed">
+        <tr>
+            <td><strong>ID:</strong><td>
+            <td> <input type="text" class="input-xlarge" id="object_id" name="object_id" value="<%= object_id %>" disabled/> <td>
+            <label class="checkbox">
+                <input type="checkbox" value="public_ind" <%= public_ind === 1 ? 'checked' : '' %>>
+                Published
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" value="state_ind" <%= state_ind === 0 ? 'checked' : '' %>>
+                Deleted
+            </label>
+        </tr>
+        <tr>
+            <td><strong>Object Name:</strong><td>
+            <td><input type="text" class="input-xlarge" id="object_nm" name="object_nm" value="<%= object_nm %>"/></td>
+        </tr>
+        <tr>
+            <td><strong>Object Type:</strong><td>
+            <td> <input type="text" class="input-xlarge" id="object_type_nm" name="name" value="<%= object_type_nm %> [<%= object_type_cd %>]" disabled/> <td>
+        </tr>
+        <tr>
+            <td><strong>Tag:</strong><td>
+            <td> <textarea id="object_tag" name="object_tag" style="width: 95%;" rows="1"><%= object_tag %></textarea><td>
+        </tr>
+        <tr>
+            <td><strong>Description:</strong><td>
+            <td> <textarea id="object_ds" name="object_ds" style="width: 95%;" rows="1"><%= object_ds %></textarea> <td>
+        </tr>
+        <tr>
+            <td><strong>Source Ref:</strong><td>
+            <td><textarea id="origin_ds" name="origin_ds" style="width: 95%;" rows="1"><%= origin_ds %></textarea> <td>
+        </tr>
+        <tr>
+            <td><strong>Global Ref:</strong><td>
+            <td> <textarea id="reference_ds" name="reference_ds" style="width: 95%;" rows="1"><%= reference_ds %></textarea> <td>
+        </tr>
+        <tr>
+            <td><strong>Text:</strong><td>
+            <td> <textarea id="object_txt" name="object_txt" style="width: 95%;" rows="3"><%= object_txt %></textarea> <td>
+        </tr>
+        <tr>
+            <td><strong>Notes:</strong><td>
+            <td> <textarea id="notes_txt" name="notes_txt" style="width: 95%;" rows="1"><%= notes_txt %></textarea> <td>
+        </tr>
+    </table>
+</div>
+
+<div class="row-fluid status-bar">
+    <div class="span12">
+        <div class="alert alert-success" style="display: none">
+            <b>Success!</b> object saved successfully
+        </div>
+    </div>
+</div>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <link rel="stylesheet" type="text/css" href="css/jquerytest.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<script src="js/initial.js"></script>
+<div id="divTest1"></div>
+<div id="radio_container">Choose Report Type: </div>
+<ul>
+    <li class="bold">Test 1</li>
+    <li>Test 2</li>
+    <li class="bold">Test 3</li>
+</ul>
+
+<span title="Title 1">Test Title One</span><br />
+<span>Test Two</span><br />
+<span title="Title 3">Test Title Three</span><br />
+
+
+<a href="http://www.google.com" target="_blank">Link 1</a><br />
+<a href="http://www.google.com" target="_self">Link 2</a><br />
+<a href="http://www.google.com" target="_blank">Link 3</a><br />
+
+<!-- we color bold tags blue if they are directly descending from the first test area:-->
+<div id="divTestArea1">
+    <b>Bold text</b>
+    <i>Italic text</i>
+    <div id="divTestArea2">
+        <b>Bold text 2</b>
+        <i>Italic text 2</i>
+        <div>
+            <b>Bold text 3</b>
+        </div>
+    </div>
+</div>
+
+<!-- Doing simple animation is very easy with jQuery.
+One of the effects it supports out-of-the-box, is fading an element in and out of visibility.
+Here's a simple example, where we fade in an otherwise hidden box, using the fadeIn() method: -->
+<div id="divFade" style="padding: 50px; background-color: #89BC38; text-align: center; display: none;">
+    <b>Hello, world! Will Fade in and out</b>
+</div>
+<a href="javascript:void(0);" onclick="ShowBox();">Show box</a>
+
+
+
+<div id="divTestArea21" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<div id="divTestArea22" style="width: 50px; height: 50px; display: none; background-color: #C3D1DF;"></div>
+<div id="divTestArea23" style="width: 50px; height: 50px; display: none; background-color: #9966FF;"></div>
+<a href="javascript:void(0);" onclick="ShowBoxes();">Show boxes</a>
+
+<!-- will fade out that iss opposite to fade in -->
+<div id="divTestArea3" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+
+
+<!-- There may be situations where you want to fade an element in our out depending on its current state.
+You could of course check if it is visible or not and then call either fadeIn() or fadeOut(),
+but the nice jQuery developers have supplied us with a specific method for toggling an element,
+called fadeToggle(). It takes the same parameters as fadeIn() and fadeOut(), so it's very easy to use. -->
+<div id="divTestArea4" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<a href="javascript:void(0);" onclick="ToggleBox();">Toggle box</a>
+
+<!--slide down -->
+<div id="divTestArea5" style="padding: 50px; background-color: #89BC38; text-align: center; display: none;">
+    <b>Hello, world! Slide Down</b>
+</div>
+<a href="javascript:void(0);" onclick="ShowBoxSlideDown();">Show box Slide down</a>
+
+<!-- For hiding the box again, we can use the slideUp() method.
+They both take the same set of parameters, which are all optional.
+The first parameter allows you to specify a duration for the effect in milliseconds,
+or "fast" or "slow", which is the same as specifying either 200 or 600 milliseconds.
+Let's try an example where we do just that: -->
+<div id="divTestArea31" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div>
+<div id="divTestArea32" style="width: 50px; height: 50px; display: none; background-color: #C3D1DF;"></div>
+<div id="divTestArea33" style="width: 50px; height: 50px; display: none; background-color: #9966FF;"></div>
+<a href="javascript:void(0);" onclick="ShowThreeBoxes();">Show Three boxes</a>
+
+<!-- he second parameter can either be the name of an easing function (which we won't use in this tutorial)
+or a callback function that you may supply, to be called once the effect is done-->
+<div id="divTestArea55" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div><br/>
+
+<!-- toggle slide down and slide up-->
+<div id="divTestArea56" style="width: 50px; height: 50px; display: none; background-color: #89BC38;"></div></body><br/>
+<a href="javascript:void(0);" onclick="ToggleBoxUpDown();">Toggle box</a>
+
+
+<!-- DOM manipulation-->
+<div id="divTest2">
+    <b>Test</b>
+    <input type="text" id="txtTest2" name="txtTest" value="Input field" />
+</div>
+
+<!-- dynamically set properties values-->
+<div id="divTextA"></div>
+<div id="divHtmlA"></div>
+<input type="text" id="txtTestA" name="txtTest" value="Input field" />
+
+
+<!-- These three functions comes with one overload more though,
+where you specify a callback function as the first and only parameter.
+This callback function will be called with two parameters by jQuery,
+the index of the current element in the list of elements selected,
+s well as the existing value, before it's replaced with a new value.
+You then return the string that you wish to use as the new value from the function.
+his overload works for both html(), text() and val()-->
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+
+<!-- Getting attributes [attr()] -->
+<a href="http://www.google.com" id="aGoogle1">Google Link</a>
+
+<!-- Sating attributes [attr()] -->
+<a href="http://www.google.com" id="aGoogle2">Google Link</a>
+
+<!-- The attr() method can also take a map of name/value pairs, for setting multiple attributes at the same time -->
+<a href="http://www.google.com" id="aGoogle3">Google Link</a><br />
+
+<!-- The attr() method also supports the special overload where the value parameter is instead a callback function,
+allowing you to access the index of the element selected as well as the existing attribute value -->
+<a href="http://www.google.com/" class="google">Google.com</a><br />
+<a href="http://www.google.co.uk/" class="google">Google UK</a><br />
+<a href="http://www.google.de/" class="google">Google DE</a><br />
+
+
+<!-- The class attribute takes one or several class names,
+which may or may not refer to a CSS class defined in your stylesheet.
+Usually it does, but you may from time to time add class names to your elements simply
+to be able to reach them easily from jQuery, since jQuery has excellent
+support for selecting elements based on their class name(s).  -->
+<a href="javascript:void(0);" onclick="ToggleClass(this);">Toggle class</a>
+
+<!-- simplified version -->
+<a href="javascript:void(0);" onclick="$(this).toggleClass('bold');">Toggle class Simplified</a>
+
+<!-- Of course, we can select multiple elements, where we can add or remove multiple classes, as well. Here's an example of just that:-->
+<div id="divTestArea6">
+    <span>Test 1</span><br />
+    <div>Test 2</div>
+    <b>Test 3</b><br />
+</div>
+
+<!-- The append() and prepend() methods -->
+<a href="javascript:void(0);" onclick="$('#olTestList1').append('<li>Appended item</li>');">Append</a>
+<a href="javascript:void(0);" onclick="$('#olTestList1').prepend('<li>Prepended item</li>');">Prepend</a>
+
+<ol id="olTestList1">
+    <li>Existing item</li>
+    <li>Existing item</li>
+</ol>
+
+<!-- we could have generated the new items with jQuery as well, or created it through regular JavaScript code and DOM elements.
+In fact, both the append() and the prepend() method takes an infinite amount of new elements as parameters -->
+<a href="javascript:void(0);" onclick="AppendItemsToList();">Append items</a>
+<ol id="olTestList2"></ol>
+
+
+
+<a href="javascript:void(0);" onclick="PrependItemsToList();">Prepend items</a>
+<ol id="olTestList3"></ol>
+
+
+<!-- before() and after()-->
+<a href="javascript:void(0);" onclick="$('input.test1').before('<i>Before</i>');">Before</a>
+<a href="javascript:void(0);" onclick="$('input.test1').after('<b>After</b>');">After</a>
+
+<br /><br />
+
+<input type="text" class="test1" value="Input 1" name="txtInput1" /><br />
+<input type="text" class="test1" value="Input 2" name="txtInput2" /><br />
+
+<!-- different ways to do this-->
+<a href="javascript:void(0);" onclick="InsertElements();">Insert elements</a>
+<br /><br />
+<span id="spnTest2">Hello world? </span>
+
+
+<!-- Ajax load()-->
+<div id="divTestArea7"></div>
+
+<div id="divTestArea8"></div>
+
+<div id="divTestArea9"></div>
+
+<!-- with and height-->
+<a href="javascript:void(0);" onclick="ShowElementDimensions();">Show element dimensions</a>
+<div id="divTestAreaA" style="height: 100px; width: 400px; padding: 20px; margin: 3px; border: 1px solid silver; background-color: #eee;"></div>
+
+<!-- The width() and height() methods can also be used to get the current dimensions of the browser window:-->
+<a href="javascript:void(0);" onclick="ShowBrowserDimensions();">Show browser dimensions</a>
+
+
+<a href="javascript:void(0);" onclick="ResizeElement();">Resize element</a>
+<div id="divTestAreaB" style="height: 100px; width: 300px; padding: 20px; border: 1px solid silver; background-color: #eee;">
+
+<!-- no conflict for other frameworks that can use $ sign-->
+<div id="divTestAreaC"></div>
+
+</body>
+</html>

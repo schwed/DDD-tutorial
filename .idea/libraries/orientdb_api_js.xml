@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="orientdb-api-js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/com/kpmg/js/vendor/oriendb-api.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/com/kon/js/vendor/oriendb-api.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

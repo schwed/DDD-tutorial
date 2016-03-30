@@ -1,0 +1,84 @@
+<div class="row-fluid">
+    <div class="object-head">
+
+    <i class="<%=iconName%>" style="vertical-align:middle;" title="<%=object_type_nm%> icon"></i>
+    <strong title="<%=object_type_nm%> [<%=object_type_cd%>]: <%= object_nm %> [<%=object_id%>]">
+    <% if (String(object_nm).length > 50) {
+        print(String(object_nm).substr(0,50)+'..</strong>');
+    } else {
+      print(object_nm+'</strong>');
+    } %>
+
+
+           <div class="pull-right">
+              <a title="Object Editis not available now..."><img src="img/edit.png"></a>  <!-- href="#objects/edit/<%= object_id %>" -->
+              <a title="Add New is not available now..."><img src="img/add.png"></a>
+           </div>
+    </div>
+
+    <div>
+      <small class="text-warning">
+      <!-- <button type="button" class="close" data-dismiss="alert">x</button> -->
+        <table>
+          <tr>
+            <td class="align-left" style="width:45%">
+              Created by <b><%= created_by %></b> on <b><%= created_dt %></b><br>
+              Modified by <b><%= changed_by %></b> on <b><%= changed_dt %></b>
+            </td>
+            <td class="align-left" style="width:45%">
+              <%= edited_dt == "" ? ' ' : "Edited by " %><b><%= edited_by == "" ? '' : edited_by %></b> <%= edited_dt == "" ? '' : " on " %><b><%= edited_dt == "" ? ' ' : edited_dt %></b><br>
+              <%= published_dt == "" ? ' ' : "Published by " %><b><%= published_by == "" ? '' : published_by %></b> <%= published_dt == "" ? '' : " on " %><b><%= published_dt == "" ? ' ' : published_dt %></b>
+            </td>
+            <td class="align-left" style="width:0%">
+            </td>
+			      <td class="align-right" style="width:10%">
+              <strong>State: </strong> <i class="<%= state_ind == 1 ? 'icon-ok-circle' : 'icon-remove-circle' %>"></i> (<%= state_ind %>) <br>
+              <strong>Public:</strong> <i class="<%= public_ind == 1 ? 'icon-globe' : 'icon-lock' %>"></i> (<%= public_ind %>)
+            </td>
+          </tr>
+        </table>
+      </small>
+    </div>
+
+    <div class="object-property">
+      <table class="table table-condensed table-stripped">
+          <thead class="property-head"><tr><th style="width: 20%">Property Name</th><th style="width: 80%">Description Text</th></thead>
+          <!-- <thead><tr><th>Name</th><th>Description/Text</th><th>Lang</th><th>Unit</th></thead> -->
+          <tr>
+              <td><strong>ID:</strong></td>
+              <td><strong><%= object_id %></strong></td>
+          </tr>
+          <tr>
+              <td><strong>Type:</strong></td>
+              <td><%= object_type_nm %> [<%= object_type_cd %>]</td>
+          </tr>
+          <tr>
+              <td><strong>Tag:</strong></td>
+              <td> <%= object_tag %> </td>
+          </tr>
+          <tr>
+              <td><strong>Description:</strong></td>
+              <td> <%= object_ds %> </td>
+          </tr>
+          <tr>
+              <td><strong>Source Ref:</strong></td>
+              <td><%= origin_ds %></td>
+          </tr>
+          <tr>
+              <td><strong>Global Ref:</strong></td>
+              <td><%= reference_ds %></td>
+          </tr>
+          <tr>
+              <td><strong>Text:</strong></td>
+              <td> <textarea readonly id="object_txt" name="object_txt" style="width: 95%;" rows="<%= txtLineCnt %>" ><%= object_txt %></textarea> <td>
+<!--               <td> <%= object_txt %> </td> -->
+          </tr>
+          <tr>
+              <td><strong>Notes:</strong></td>
+              <td> <textarea readonly id="notes_txt" name="notes_txt" style="width: 95%;" rows="<%= ntsLineCnt %>" ><%= notes_txt %></textarea> <td>
+              <!-- <td> <%= notes_txt %> </td> -->
+          </tr>
+      </table>
+    </div>
+
+</div>

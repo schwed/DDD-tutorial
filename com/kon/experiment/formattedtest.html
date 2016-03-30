@@ -1,0 +1,300 @@
+<div id="content" class="span12">
+
+    <div id="19630000">
+
+
+        <div class="row-fluid">
+            <!-- THIS IS LEFT NAVIGATION -->
+            <div class="span9" id="ObjectPath">
+                <div id="19630000">
+                    <ol class="submenu">
+                        <li><a href="#">&nbsp;&nbsp;<i class="icon-home"></i></a></li>
+                        <li class="divider">/</li>
+                        <li><a href="#objects/19611178">BI System</a></li>
+                        <li class="divider">/</li>
+                        <li><a href="#objects/19611529">BI Folder_22</a></li>
+                        <li class="divider">/</li>
+                        <li><a href="#objects/19612253">BI Folder_167</a></li>
+                        <li class="divider">/</li>
+                        <li>BI Report_707</li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <!-- THIS IS RIGHT MENU PICTURES -->
+            <div class="span3" id="SubMenu">
+                <ul class="nav nav-pills pull-right">
+                    <li class="bus-menu"><a onclick="app.navigate('glossary/'+glossaryId,{trigger:true});"
+                                            title="Business Glossary"><i class="icon-book"></i></a></li>
+                    <li class="tech-menu"><a onclick="app.navigate('objects/'+selId ,{trigger:true});"
+                                             title="Metadata Explorer"><i class="icon-info-sign"></i></a></li>
+                    <li class="dep-tbl-menu"><a
+                            onclick="console.log('Msg:URL:dependencies/s/'+graphType+'/'+cdList+'/'+selId); app.navigate('dependencies/s/'+graphType+'/'+cdList+'/'+selId ,{trigger:true});"
+                            title="Dependency Explorer: Table View"><i class="icon-list"></i></a></li>
+                    <li class="dep-graph-menu"><a
+                            onclick="console.log('Msg:URL:graph/'+graphType+'/'+cdList+'/'+selId); app.navigate('graph/'+graphType+'/'+cdList+'/'+selId ,{trigger:true});"
+                            title="Dependency Explorer: Graph View"><i class="icon-random"></i></a></li>
+                    <!-- <li class="dep-tree-menu"><a href="#treegraph/t/2/1004/122" title="Dependency Explorer: Tree View"><i class="icon-align-left"></i></a></li> -->
+                </ul>
+            </div>
+
+        </div>
+        <!-- END OF ROW FLUID -->
+
+    </div>
+
+    <div>
+
+        <div class="dep-head">
+            <!-- THIS IS REPORT TITLE -->
+            <strong title="BI Report: BI Report_707">BI Report_707</strong>
+            <small class="graphSize text-info" title="Objects Count, Relations Count">(735,842)</small>
+
+
+            <!-- THIS IS LAST TWO BUTTONS TO SWITCH BETWEEN LIEAGE AND IMPACT -->
+            <ul class="pull-right">
+                <div class="btn-group" data-toggle="buttons-radio">
+                    <button type="button" class="btn btn-mini lineage " title="Switch to data lineage graph view">
+                        Lineage
+                    </button>
+                    <button type="button" class="btn btn-mini impact active" title="Switch to impact graph view">
+                        Impact
+                    </button>
+                </div>
+            </ul>
+
+            <!-- THIS IS THAT DROP DOWN TO SELECT ITEMS AND HIT REFRESH -->
+            <ul class="pull-right">
+			<span class="ObjectTypeDropdown dropdown-checkbox dropdown closed" title="Select Object Types in Graph">
+				<div class="btn-group">
+                    <button class="dropdown-checkbox-toggle btn btn-mini" data-toggle="dropdown" href="#">Selected<span
+                            class="dropdown-checkbox-nbselected">(6)</span>
+                        <b class="caret"></b>
+                    </button>
+                    <button class="btn dropdown-toggle btn-mini reload" title="Reload graph with changed object types">
+                        <i class="icon-repeat"></i>
+                    </button>
+                </div>
+				<div class="dropdown-checkbox-content">
+                    <ul class="dropdown-checkbox-menu">
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="389556309060.6625">
+                                <label for="389556309060.6625">ETL Package</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1355937471602.8835" checked="checked">
+                                <label for="1355937471602.8835">ETL Task</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1100468674780.9336" checked="checked">
+                                <label for="1100468674780.9336">Schema</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="71922330671.26784" checked="checked">
+                                <label for="71922330671.26784">File</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1100956754315.7102">
+                                <label for="1100956754315.7102">Table</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1232340075402.7036" checked="checked">
+                                <label for="1232340075402.7036">View</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="644531059267.6525" checked="checked">
+                                <label for="644531059267.6525">Column</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1354585000009.9849">
+                                <label for="1354585000009.9849">BI Folder</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="45920133112.61779" checked="checked">
+                                <label for="45920133112.61779">BI Report</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="layout">
+                                <input type="checkbox" id="1152992729997.0393">
+                                <label for="1152992729997.0393">BI Object</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+			</span>
+            </ul>
+            <!-- END OF THAT DROP DOWN TO SELECT ITEMS AND HIT REFRESH-->
+        </div> <!-- END OF REPORT TITLE -->
+    </div>
+    <div>
+        <svg width="1300" height="7350">
+            <g transform="translate(200,5)">
+                <g>
+
+                    <path class="link"
+                          d="M273.3333333333333,2487.80399021659C531.6666666666667,2487.80399021659 531.6666666666667,3432.1519585076285 790,3432.1519585076285"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M10,6598.831566882574C136.66666666666666,6598.831566882574 136.66666666666666,5896.5956423507805 263.3333333333333,5896.5956423507805"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M273.3333333333333,5962.3693640602205C531.6666666666667,5962.3693640602205 531.6666666666667,3440.354492924442 790,3440.354492924442"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M273.3333333333333,5976.59339208304C531.6666666666667,5976.59339208304 531.6666666666667,3440.581534430669 790,3440.581534430669"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M273.3333333333333,3709.3679850038843C531.6666666666667,3709.3679850038843 531.6666666666667,3435.0005374055177 790,3435.0005374055177"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M273.3333333333333,4409.2132775546215C531.6666666666667,4409.2132775546215 531.6666666666667,3436.2835859174493 790,3436.2835859174493"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M10,766.7731903000971C268.3333333333333,766.7731903000971 268.3333333333333,1535.9625601364198 526.6666666666666,1535.9625601364198"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M10,943.631955802151C268.3333333333333,943.631955802151 268.3333333333333,1542.8213256384738 526.6666666666666,1542.8213256384738"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M10,984.698522877913C268.3333333333333,984.698522877913 268.3333333333333,1543.887892714236 526.6666666666666,1543.887892714236"
+                          style="stroke-width: 1px;"></path>
+                    <path class="link"
+                          d="M10,974.5638819846856C268.3333333333333,974.5638819846856 268.3333333333333,1543.7532518210085 526.6666666666666,1543.7532518210085"
+                          style="stroke-width: 1px;"></path>
+                </g>
+                <g>
+                    <g class="node" transform="translate(263.3333333333333,667.8875219043889)">
+                        <rect height="5.808038531377572" width="10"
+                              style="fill: rgb(31, 119, 180); stroke: rgb(15, 58, 88);"></rect>
+                        <text x="-10" y="2.904019265688786" dy=".35em" text-anchor="end">View_58</text>
+                    </g>
+                    <g class="node" transform="translate(263.3333333333333,715.2222838276105)">
+                        <rect height="3.564023644254419" width="10"
+                              style="fill: rgb(31, 119, 180); stroke: rgb(15, 58, 88);"></rect>
+                        <text x="-10" y="1.7820118221272094" dy=".35em" text-anchor="end">View_126</text>
+                    </g>
+                    <g class="node" transform="translate(263.3333333333333,6301.5589661112335)">
+                        <rect height="6.336042034230078" width="10"
+                              style="fill: rgb(31, 119, 180); stroke: rgb(15, 58, 88);"></rect>
+                        <text x="-10" y="3.168021017115039" dy=".35em" text-anchor="end">View_130</text>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
+        <div class="popup" style="opacity: 0; left: 1013px; top: 3670px;">
+            <div class="popup-label">IMPACT</div>
+            <div class="popup-line">
+                <span class="popup-label">Source</span>
+                <span class="popup-value">Schema_18.View_2129</span>
+            </div>
+            <div class="popup-line">
+                <span class="popup-label">Target</span>
+                <span class="popup-value">BI Folder_167.BI Report_707</span>
+            </div>
+            <div class="popup-line">
+                <span class="popup-label">Weight </span>
+                <span class="popup-value">1.0</span>
+            </div>
+            <div class="popup-line">
+                <span class="popup-label">ID </span>
+                <span class="popup-value">13649480 -&gt; 19630000</span>
+            </div>
+            <div class="popup-line">
+                <span class="popup-label">Conditions </span>
+                <span class="popup-value"></span>
+            </div>
+        </div>
+        <style>
+
+            #chart {
+                height: 1500px;
+            }
+
+            .node rect {
+                cursor: move;
+                fill-opacity: .9;
+                shape-rendering: crispEdges;
+            }
+
+            .node text {
+                pointer-events: none;
+                font-size: 10px;
+                text-shadow: 0 1px 0 #fff;
+            }
+
+            .link {
+                fill: none;
+                stroke: #000;
+                stroke-opacity: .2;
+            }
+
+            .link:hover {
+                stroke-opacity: .5;
+            }
+
+            /* Chart Popup */
+            div.popup {
+                position: absolute;
+                text-align: left;
+                max-width: 350px;
+                padding: 8px;
+                font-family: Arial, Helvetical, sans-serif;
+                /*font: 12px sans-serif;
+                width: 60px;
+                height: 28px;
+                background: lightsteelblue;*/
+                background-color: white;
+                border: 1px solid #bbbbbb;
+                border-radius: 4px;
+                pointer-events: none;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .popup-title {
+                font-size: 12px;
+                font-weight: bold;
+                padding-bottom: 4px;
+            }
+
+            .popup-line {
+                line-height: 15px;
+            }
+
+            .popup-label {
+                color: #666;
+                font-weight: normal;
+                font-size: 11px;
+                padding-right: 5px;
+            }
+
+            .popup-value {
+                font-weight: bold;
+                font-size: 12px;
+                text-align: center;
+            }
+
+        </style>
+
+        <div class="DepGraphFooter"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+    </div>
+</div>

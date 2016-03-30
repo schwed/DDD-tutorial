@@ -1,0 +1,35 @@
+    <div class="dep-head">
+    <!-- <img src="img/graph-orange.png" title="Dependency Graph View">     -->
+<!-- 		<i class="<%=iconName%>" style="vertical-align:middle;" title="<%=title%> icon"></i>
+		<strong class="graphType text-error"></strong>
+      	<strong class="graphObject" title="<%= parent %>">
+          <% if (String(parent).length > 20) { 
+              print(parent.substr(0,20)+'..</strong>');
+          } else {
+            print(parent+'</strong>');
+          } %>
+          <strong class="text-info"> / </strong> -->
+          <strong title="<%= title %>: <%= name %>">
+			<% if (String(name).length > 50) { 
+			    print(String(name).substr(1,50)+'..</strong>');
+			} else {
+				print(name+'</strong>');
+			} %>
+		<small class="graphSize text-info" title="Objects Count, Relations Count"></small>
+
+<!-- 	    <ul class="pull-right">
+	  	   <a href="#dependencies/s/<%= rcd %>/<%=cd%>/<%= object_id %>" title="Switch back to Dependency Explorer Table view.."> <img src="img/table.png"></a>
+	       <a href="#treegraph/s/<%= rcd %>/<%=cd%>/<%= object_id %>" title="Switch to Source Dependency Tree view.."> <img src="img/graph-left.png"></a> 
+    	   <a href="#treegraph/t/<%= rcd %>/<%=cd%>/<%= object_id %>" title="Switch to Target Dependency Tree view.."> <img src="img/graph-right.png"></a> 
+	    </ul> -->
+
+	    <ul class="pull-right">
+	      <div class="btn-group" data-toggle="buttons-radio">
+	      <button type="button" class="btn btn-mini lineage <%= rcd == 1 ? 'active' : '' %>" title="Switch to data lineage graph view">Lineage</button>
+	      <button type="button" class="btn btn-mini impact <%= rcd == 2 ? 'active' : '' %>" title="Switch to impact graph view">Impact</button>
+	      </div>
+	    </ul>
+	    <ul class="pull-right">
+          <span class="ObjectTypeDropdown dropdown-checkbox dropdown closed" title="Select Object Types in Graph">Object Types</span>             
+        </ul>
+    </div>    

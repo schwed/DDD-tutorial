@@ -1,0 +1,17 @@
+<!-- <div id="submenu"> -->
+
+<div class="row-fluid">
+    <div class="span9" id="ObjectPath">
+    </div>
+    <div class="span3" id="SubMenu">
+        <ul class="nav nav-pills pull-right">
+          <li class="bus-menu"><a onclick="app.navigate('glossary/'+glossaryId,{trigger:true});" title="Business Glossary"><i class="icon-book"></i></a></li>
+          <li class="tech-menu"><a onclick="app.navigate('objects/'+selId ,{trigger:true});" title="Metadata Explorer"><i class="icon-info-sign"></i></a></li>
+          <li class="dep-tbl-menu"><a onclick="console.log('Msg:URL:dependencies/s/'+graphType+'/'+cdList+'/'+selId); app.navigate('dependencies/s/'+graphType+'/'+cdList+'/'+selId ,{trigger:true});" title="Dependency Explorer: Table View"><i class="icon-list"></i></a></li>
+          <li class="dep-graph-menu"><a onclick="console.log('Msg:URL:graph/'+graphType+'/'+cdList+'/'+selId); app.navigate('graph/'+graphType+'/'+cdList+'/'+selId ,{trigger:true});" title="Dependency Explorer: Graph View"><i class="icon-random"></i></a></li>
+          <!-- <li class="dep-tree-menu"><a href="#treegraph/t/2/1004/122" title="Dependency Explorer: Tree View"><i class="icon-align-left"></i></a></li> -->
+        </ul>
+    </div>
+<!--     <div class="span3" id="ActionMenu">
+    </div> -->
+</div>

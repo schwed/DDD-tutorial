@@ -1,0 +1,16 @@
+<!--     <div class="dep-subhead"><strong><%= txt %></strong> (<%=cnt%>)
+    </div> -->
+
+    <table class="table table-condensed">
+		<tr>
+            <thead class="property-head">
+            	<th style="width: 45%" title="The Object Name that has Lineage or Impact dependency with current object(s)."><strong><%= txt %></strong> (<%=cnt%>)</th>
+                <th style="width: 15%" title="The Local Lineage dependency % (Lld) is calculated as ratio over sum of local source and target Lineage weights (Lld=Llsws/Llsws+Lltws). Local Lineage Dep 0 % means that there are no data sources detected for the object. Local Lineage Dep 100 % means that there are no data consumers (targets) detected for the object. Local Lineage Dep about 50 % means that there are equal number of weighted sources and consumers (targets) detected for the object.">Lineage Dep (%)</th>
+                <th style="width: 15%" title="The Local Impact dependency % (Lid) is calculated as ratio over sum of local source and target Impact weights (Lid=Lisws/Lisws+Ltws). Local Impact Dep 0 % means that there are no dependent data sources detected for the object. Local Dep 100 % means that there are no dependent data consumers (targets) detected for the object. Local Impact Dep about 50 % means that there are equal number of weighted dependent sources and consumers (targets) detected for the object.">Impact Dep (%)</th>
+                <th style="width: 15%" title="The Global dependency Count (Gdc) is sum of all source and target Lineage and Impact relations counts (Gdc=Gsc+Gtc).">Global Dep (#)</th>
+                <th style="width: 5%" title="The Distance shows number of relations from selected object(s).">Distance</th>
+                <th style="width: 5%" title="The Query count shows number of queries related with the current object.">Queries</th>
+            </thead>
+        </tr> 
+    </table>
+	<%= cnt == 0 ? '...no items found...' : '' %>
